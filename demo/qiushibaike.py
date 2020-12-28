@@ -9,6 +9,7 @@ urllib.request.install_opener(opener)
 urlstr="https://www.qiushibaike.com/text/page/{}/"
 reg='<div.*?class="content">.*?<span>(.*?)</span>.*?</div>'
 savefile=open("D:\\search\\qiushibaike.txt","w",encoding='utf-8')
+
 for i in range(1,10):
     try:
         data = urllib.request.urlopen(urlstr.format(i)).read().decode("utf-8", "ignore")
