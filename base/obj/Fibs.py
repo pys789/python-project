@@ -1,3 +1,4 @@
+# 自定义迭代器需要实现 __init__，__next__，__iter__三个魔法函数
 class Fibs:
     def __init__(self):
         self.a = 0
